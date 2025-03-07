@@ -1,0 +1,69 @@
+.corpoTarefa {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    margin-top: 30px;
+}
+
+.tabela{
+    box-shadow: 5px 5px 5px 5px;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.titulo {
+    border-bottom: 3px solid black;
+    margin: 15px;
+    padding: 20px;
+    
+}
+
+.desc {
+    font-size: x-large;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    padding: 10px;
+}
+
+.desc input{
+    font-size: x-large;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.btns{
+    margin-top: 50px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 500px auto;
+}
+
+.salvar{
+    border-radius: 5px;
+    border: 0px;
+    font-size: 30px;
+    background-color: #00AAFF;
+    color: #000000;
+
+}
+
+.salvar:hover{
+    background-color: #0059ffab;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.cancelar{
+    background-color: #FFA500;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.cancelar:hover{
+    background-color: #ffa600e0;
+    color: #000000;
+    cursor: pointer;
+}

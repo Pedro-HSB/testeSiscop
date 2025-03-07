@@ -1,0 +1,88 @@
+.corpoLista {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    margin-top: 30px;
+}
+
+.tabela{
+    box-shadow: 5px 5px 5px 5px;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.vazio{
+    text-align: center;
+}
+
+.titulo {
+    border-bottom: 3px solid black;
+    margin: 15px;
+    padding: 20px;
+    
+}
+
+.lista {
+    border-top: 5px solid black;
+    margin: 10px;
+}
+
+.tarefa {
+    margin: 10px;
+    border-bottom: 5px solid black;
+    display: grid;
+    grid-template-columns: 100px auto;
+    padding: 10px;
+}
+
+.btns{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 500px auto;
+}
+
+.adicionar{
+    border-radius: 5px;
+    border: 0px;
+    font-size: 30px;
+    background-color: #00AAFF;
+    color: #000000;
+
+}
+
+.adicionar:hover{
+    background-color: #0059ffab;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.limpar{
+    background-color: #FFA500;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.limpar:hover{
+    background-color: #ffa600e0;
+    color: #000000;
+    cursor: pointer;
+}
+
+.taboada{
+
+    border-radius: 5px;
+    border: 0px;
+    font-size: 30px;
+    color: #000000;
+    padding: 20px;
+    background-color: #1f26ffc5;
+}
+
+.taboada:hover{
+    background-color: #0059FF;
+    color: #ffffff;
+    cursor: pointer;
+}
