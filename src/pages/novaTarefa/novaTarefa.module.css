@@ -1,9 +1,11 @@
+/* o corpoLista e toda a pagina novaTarefa */
 .corpoTarefa {
     display: grid;
     grid-template-columns: 200px auto 200px;
     margin-top: 30px;
 }
 
+/* a tabela dentro do corpoLista*/
 .tabela{
     box-shadow: 5px 5px 5px 5px;
     padding: 50px;
@@ -11,6 +13,7 @@
     margin: 30px;
 }
 
+/* para o H1 do titulo */
 .titulo {
     border-bottom: 3px solid black;
     margin: 15px;
@@ -18,6 +21,7 @@
     
 }
 
+/* para o campo de descricao */
 .desc {
     font-size: x-large;
     margin: 10px;
@@ -26,12 +30,14 @@
     padding: 10px;
 }
 
+/* para o input da descricao */
 .desc input{
     font-size: x-large;
     border-radius: 5px;
     background-color: #ffffff;
 }
 
+/* para a div dos botoes */
 .btns{
     margin-top: 50px;
     padding: 20px;
@@ -39,6 +45,7 @@
     grid-template-columns: auto 500px auto;
 }
 
+/* o botao de salvar */
 .salvar{
     border-radius: 5px;
     border: 0px;
@@ -47,13 +54,13 @@
     color: #000000;
 
 }
-
 .salvar:hover{
     background-color: #0059ffab;
     color: #ffffff;
     cursor: pointer;
 }
 
+/* o botao de cancelar */
 .cancelar{
     background-color: #FFA500;
     border-radius: 5px;
@@ -61,7 +68,6 @@
     font-size: 30px;
     color: #ffffff;
 }
-
 .cancelar:hover{
     background-color: #ffa600e0;
     color: #000000;

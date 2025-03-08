@@ -1,28 +1,40 @@
-import { useState } from "react"
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Style from "./novaTarefa.module.css";
 
-function NovaTarefa() {
+const NovaTarefa: React.FC = () => {
 
-    const [desc, setDesc] = useState("");
-    const [lista, setLista] = useState("");
+    //a desc pega o valor do input para colocar no localStorage
+    const [desc, setDesc] = useState<string>("");
+
+    //a lista pega o tamanho do array caso já exista
+    const [lista, setLista] = useState<string>("");
+
+    //a navigate funciona para o redirecionamento de paginas
     const navigate = useNavigate();
 
     const salvar = () => {
-        localStorage.setItem(lista, JSON.stringify(desc))
-        navigate("/")
-    }
+        //caso o usuario não digite valor
+        if (desc === "") {
+            localStorage.setItem("1", JSON.stringify("Valor Não Informado"));
+            navigate("/");
+        } else {
+            localStorage.setItem(lista, JSON.stringify(desc));
+            navigate("/");
+        }
+    };
 
     const cancelar = () => {
-        navigate("/")
-    }
+        navigate("/");
+    };
 
-    const descInput = (e) => {
-        if (lista == "") {
-            setLista(localStorage.length + 1)
+    const descInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+        //pego o valor digitado no input e o tamanho atual do localStorage
+        if (lista === "") {
+            setLista((localStorage.length + 1).toString());
         }
-        setDesc(e.target.value)
-    }
+        setDesc(e.target.value);
+    };
 
     return (
         <>
@@ -41,6 +53,7 @@ function NovaTarefa() {
                         <input
                             type="text"
                             value={desc}
+                            placeholder="Coloque Aqui a Descrição Da Sua Nova Tarefa"
                             onChange={descInput} />
                     </div>
                     <div className={Style.btns}>
@@ -52,7 +65,7 @@ function NovaTarefa() {
                 <div></div>
             </div>
         </>
-    )
+    );
 }
 
-export default NovaTarefa
+export default NovaTarefa;

@@ -1,24 +1,28 @@
+/* o corpoLista e toda a pagina taboada */
 .corpoTarefa {
     display: grid;
     grid-template-columns: 200px auto 200px;
     margin-top: 30px;
 }
 
-.listaNum{
+/* para o H1 do titulo */
+.titulo {
+    border-bottom: 3px solid black;
+    margin: 15px;
+    padding: 20px;
+
+}
+
+/* a lista de numeros */
+.listaNum {
     box-shadow: 3px 3px 3px 3px;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
 }
 
-.titulo {
-    border-bottom: 3px solid black;
-    margin: 15px;
-    padding: 20px;
-    
-}
-
-.desc {
+/* para o campo de numeros */
+.numeros {
     font-size: x-large;
     margin: 10px;
     display: grid;
@@ -26,13 +30,22 @@
     padding: 10px;
 }
 
-.desc input{
+/* para o input da numeros */
+.numeros input {
     font-size: x-large;
     border-radius: 5px;
     background-color: #ffffff;
 }
 
-.calcular{
+/* para a div dos botoes */
+.btns {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 500px auto;
+}
+
+/* o botao de calcular */
+.calcular {
     border-radius: 5px;
     border: 0px;
     font-size: 30px;
@@ -40,28 +53,22 @@
     color: #000000;
 
 }
-.btns{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: auto 500px auto;
-}
-
-.calcular:hover{
+.calcular:hover {
     background-color: #0059ffab;
     color: #ffffff;
     cursor: pointer;
 
 }
 
-.retornar{
+/* o botao de retornar */
+.retornar {
     background-color: #FFA500;
     border-radius: 5px;
     border: 0px;
     font-size: 30px;
     color: #ffffff;
 }
-
-.retornar:hover{
+.retornar:hover {
     background-color: #ffa600e0;
     color: #000000;
     cursor: pointer;

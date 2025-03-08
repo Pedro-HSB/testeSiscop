@@ -1,9 +1,11 @@
+/* o corpoLista e toda a pagina listaTarefa */
 .corpoLista {
     display: grid;
     grid-template-columns: 200px auto 200px;
     margin-top: 30px;
 }
 
+/* a tabela dentro do corpoLista*/
 .tabela{
     box-shadow: 5px 5px 5px 5px;
     padding: 50px;
@@ -11,36 +13,41 @@
     margin: 30px;
 }
 
+/* somente para a frase quando não tem itens */
 .vazio{
     text-align: center;
 }
 
+/* para o H1 do titulo */
 .titulo {
     border-bottom: 3px solid black;
     margin: 15px;
     padding: 20px;
-    
 }
 
+/* a lista de tarefas */
 .lista {
     border-top: 5px solid black;
     margin: 10px;
 }
 
+/* para cada tarefa individual */
 .tarefa {
     margin: 10px;
     border-bottom: 5px solid black;
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 100px auto ;
     padding: 10px;
 }
 
+/* para a div dos botoes */
 .btns{
     padding: 20px;
     display: grid;
     grid-template-columns: auto 500px auto;
 }
 
+/* o botao de adicionar */
 .adicionar{
     border-radius: 5px;
     border: 0px;
@@ -49,7 +56,6 @@
     color: #000000;
 
 }
-
 .adicionar:hover{
     background-color: #0059ffab;
     color: #ffffff;
@@ -57,6 +63,7 @@
 
 }
 
+/* o botao para limpar a lista */
 .limpar{
     background-color: #FFA500;
     border-radius: 5px;
@@ -64,23 +71,21 @@
     font-size: 30px;
     color: #ffffff;
 }
-
 .limpar:hover{
     background-color: #ffa600e0;
     color: #000000;
     cursor: pointer;
 }
 
+/* para o botao da taboada */
 .taboada{
-
     border-radius: 5px;
     border: 0px;
     font-size: 30px;
     color: #000000;
     padding: 20px;
-    background-color: #1f26ffc5;
+    background-color: #4d91f8c5;
 }
-
 .taboada:hover{
     background-color: #0059FF;
     color: #ffffff;
